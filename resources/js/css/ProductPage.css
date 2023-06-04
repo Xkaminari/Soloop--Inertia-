@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+:root {
+    --main: #DEDFF3;
+    --secondary: rgba(243, 247, 255, 0.5);
+    --grey : #787878;
+    --brouwn : #B77151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Karla;
+}
+
+.product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    background-color: var(--main);
+    min-height: 100vh;
+}
+
+.all-product-details {
+    width: 85vw;
+    border-radius: 15px;
+    background: rgba(243,247,255,0.75);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.first-row-product-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.specific-img-product {
+    width: 45%;
+    border-radius: 10px;
+    border: 1.5px solid var(--brouwn);
+}
+
+.specific-name-product {
+    color: var(--grey);
+    font-family: Forum;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.specific-price-product {
+    color: var(--brouwn);
+    font-family: Forum;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.second-row-product-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buy-now-btn {
+    padding: 10px;
+    font-size: 2em;
+    color: var(--secondary);
+    border-radius: 15px;
+    border: 2px solid var(--secondary);
+    background: var(--brouwn);
+    background-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+}
+
+.add-to-cart-btn {
+    padding: 10px;
+    font-size: 2em;
+    color: var(--brouwn);
+    border-radius: 15px;
+    border: 2px solid var(--brouwn);
+    background: var(--secondary);
+    background-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+}
+
+.third-row-product-details {
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+.specific-description-title {
+    color: var(--grey);
+    font-family: Forum;
+    font-size: 1.5em;
+}
+
+.specific-description-product {
+    color: var(--grey);
+    font-family: Forum;
+    font-size: 1.2em;
+}

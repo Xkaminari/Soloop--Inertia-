@@ -1,0 +1,292 @@
+.absolute-cantainer {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.background-triangles-cantainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.triangle-groupe-1 {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.internal-groupe-1 {
+    position: relative;
+    width: 140px;
+    height: 160px;
+}
+
+.triangle1 {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    animation: triangle1Animation 4s ease infinite;
+}
+
+.triangle2 {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    animation-delay: 4s;
+    animation: triangle2Animation 4s ease infinite;
+}
+
+.triangle3 {
+    position: absolute;
+    left: -15px;
+    bottom: -25px;
+    animation-delay: 8s;
+    animation: triangle3Animation 4s ease infinite;
+}
+
+.triangle-img {
+    width: 90px;
+}
+
+.single-triangle-img {
+    width: 100px;
+}
+
+.single-triangle1-cantainer {
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 40vw;
+}
+
+.single-triangle1 {
+    animation-delay: 11s;
+    animation: singleTriangle1Animation 12s ease infinite;
+}
+
+.single-triangle3-cantainer {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.single-triangle3 {
+    animation-delay: 11s;
+    animation: singleTriangle3Animation 12s ease infinite;
+}
+
+.triangle-groupe-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+    margin-bottom: 10vh;
+}
+
+.single-triangle2 {
+    margin-left: 20px;
+    animation-delay: 13s;
+    animation: singleTriangle2Animation 12s ease-in-out infinite;
+}
+
+.internal-groupe-2 {
+    margin: 0 15px 50px 0;
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+.triangle1-groupe-2 {
+    animation-delay: 9s;
+    animation: triangle1Group2Animation 4s ease-in-out infinite;
+}
+
+.triangle2-groupe-2 {
+    animation-delay: 9s;
+    animation: triangle2Group2Animation 4s ease-in-out infinite;
+}
+
+@keyframes triangle1Animation {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(15px,5px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes triangle2Animation {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(15px,10px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes triangle3Animation {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(10px,15px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes singleTriangle1Animation {
+    0% {
+        transform: translate(0,0);
+    }
+    25% {
+        transform: translate(-10px,30px);
+    }
+    50% {
+        transform: translate(10px,60px);
+    }
+    75% {
+        transform: translate(-10px,30px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes triangle1Group2Animation {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(0px,20px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes triangle2Group2Animation {
+    0% {
+        transform: translate(0,0) rotate(-112deg);
+    }
+    50% {
+        transform: translate(0px,-23px) rotate(-112deg);
+    }
+    100% {
+        transform: translate(0,0) rotate(-112deg);
+    }
+}
+
+@keyframes singleTriangle2Animation {
+    0% {
+        transform: translate(-20px,40PX);
+    }
+    25% {
+        transform: translate(20px,70px);
+    }
+    50% {
+        transform: translate(-20px,110px);
+    }
+    75% {
+        transform: translate(20px,70px);
+    }
+    100% {
+        transform: translate(-20px,40PX);
+    }
+}
+
+@keyframes singleTriangle3Animation {
+    0% {
+        transform: translate(0px,0PX);
+    }
+    25% {
+        transform: translate(-30px,35px);
+    }
+    50% {
+        transform: translate(10px,55px);
+    }
+    75% {
+        transform: translate(-30px,35px);
+    }
+    100% {
+        transform: translate(0px,0PX);
+    }
+}
+
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+    .absolute-cantainer {
+        z-index: 2;
+    }
+
+    .single-triangle-img {
+        width: 150px;
+    }
+
+    .single-triangle-img {
+        width: 200px;
+    }
+
+    .single-triangle2 {
+        margin-left: 40px;
+    }
+
+    .triangle-groupe-1 {
+        margin: 0px 30px 0 30px;
+}
+
+    .internal-groupe-1 {
+        margin: 0 0 0 100px;
+    }
+
+    .triangle1 {
+        width: 150px;
+        right: -85px;
+        top: -40px;
+    }
+
+    .triangle2 {
+        width: 150px;
+        right: -84px;
+        top: 50px;
+    }
+
+    .triangle3 {
+        width: 150px;
+        right: -200px;
+        top: 60px;
+    }
+
+    .internal-groupe-2 {
+        position: relative;
+        width: 340px;
+        margin: 0 100px 150px 0;
+    }
+
+    .triangle-model-groupe-2 {
+        width: 170px;
+        position: absolute;
+    }
+
+    .triangle1-groupe-2 {
+        left: 0px;
+    }
+
+    .triangle2-groupe-2 {
+        right: 0px;
+    }
+}

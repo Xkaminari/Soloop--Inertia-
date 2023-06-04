@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --main: #DEDFF3;
+    --secondary: rgba(243, 247, 255, 0.5);
+    --secondaryBtn: #f3f7ff;
+    --bground: #E8EBFC;
+    --grey : #787878;
+    --brouwn : #B77151;
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    padding: 15px 0px 0px 0px;
+    font-family: Karla;
+}
+
+.logo-soloop {
+    filter: brightness(4);
+    width: 70%;
+}
+
+.mobile-menu-icon {
+    z-index: 3;
+    color: var(--brouwn);
+    border: none;
+    background: none;
+    font-size: 2.5em;
+}
+
+#burger {
+    transition: 0.6s ease;
+}
+
+#xcross-bar {
+    display: none;
+    padding-left: 10px;
+    transition: 0.6s ease;
+}
+
+.xcross_nav {
+    position: absolute;
+    top: 35px;
+    right: 80px;
+}
+
+.nav-elements {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba( 243, 247, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    --webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.6s ease;
+    opacity: 0;
+    z-index: 3;
+}
+
+.connexion-btn-cart {
+    height: 10vh;
+    padding-top: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.connexion-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+.user-infos {
+    height: 10vh;
+    padding-top: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login {
+    border-radius: 15px;
+    border: 2px solid var(--brouwn);
+    color: var(--brouwn);
+    background: var(--bground);
+    background-blend-mode: normal;
+    width: 100px;
+    height: 45px;
+    font-family: Karla;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.sign-up {
+    color: var(--bground);
+    border-radius: 15px;
+    background: var(--brouwn);
+    background-blend-mode: normal;
+    width: 100px;
+    height: 45px;
+    font-family: Karla;
+    font-size: 1.2em;
+    font-weight: 400;
+    border: 2px solid var(--brouwn);
+}
+
+.cart-group {
+    position: relative;
+}
+
+.fa-cart-shopping {
+    color: var(--brouwn);
+    font-size: 2.5em;
+}
+
+.cart-cercle {
+    width: 20px;
+    height: 20px;
+    border-radius: 17px;
+    border: 1px solid #e8ebfc;
+    background: rgba(237,246,102,0.7);
+    box-shadow: 2px -1px 4px -1px rgba(100,100,100,0.5);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey);
+}
+
+.nav-links {
+    height: 70vh;
+    width: 90vw;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    row-gap: 25px;
+    margin-bottom: 10vh;
+}
+
+.user-related-pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.user-related-page {
+    font-size: 0.8em;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--brouwn);
+    font-weight: 600;
+}
+
+.enter-animation {
+    opacity: 1;
+}
+
+.leave-animation {
+    opacity: 0;
+}
+
+/* Conected css */
+.user-name {
+    color: var(--grey);
+    font-size: 1.5em;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+.Lougou-btn {
+    border: none;
+    background-color: var(--brouwn);
+    font-size: 1.2em;
+    color: var(--secondaryBtn);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+/* ------------- */
+
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+    .navbar {
+        justify-content: space-between;
+        width: 90vw;
+        margin: 0 5vw;
+    }
+
+    .logo-soloop {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+
+    .mobile-menu-icon {
+        font-size: 3.5em;
+        margin: 20px 0 0 0;
+    }
+
+    .user-name {
+        font-size: 2em;
+        top: 55px;
+    }
+
+    .Lougou-btn {
+        font-size: 1.5em;
+    }
+
+    .fa-cart-shopping {
+        font-size: 3em;
+    }
+
+    .connexion-btn-cart {
+        height: 10vh;
+        padding-top: 10vh;
+        width: calc(100vw - 70px);
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 70px;
+        align-items: center;
+    }
+
+    .connexion-btns {
+        margin: 0 50px 0 20px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .login {
+        font-size: 2em;
+        width: auto;
+        height: auto;
+        padding: 5px 15px;
+    }
+    
+    .sign-up {
+        font-size: 2em;
+        width: auto;
+        height: auto;
+        padding: 5px 10px;
+    }
+
+    .user-infos {
+        width: 15vw;
+        margin: 0 400px 0 0;
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    .user-related-pages {
+        position: absolute;
+        top: 30px;
+        right: 200px;
+    }
+
+    #user-related-link {
+        font-size: 2.4em;
+    }
+
+    .nav-links li a{
+        text-decoration: none;
+        font-size: 3em;
+        color: var(--brouwn);
+        font-weight: 600;
+    }
+}

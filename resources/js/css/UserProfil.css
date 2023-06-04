@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+:root {
+    --main: #DEDFF3;
+    --secondary: rgba(243, 247, 255, 0.5);
+    --grey : #787878;
+    --brouwn : #B77151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Karla;
+}
+
+.userProfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    background-color: var(--main);
+    min-height: 100vh;
+}
+
+.userProfil-content {
+    border-radius: 30px;
+    border: 1px solid #e8ebfc;
+    background: rgba(255,255,255,0.5);
+    height: 80vh;
+    width: 85vw;
+    padding: 10px;
+    z-index: 2;
+}
+
+.userProfil-content h2 {
+    font-weight: 500;
+    color: var(--grey);
+    font-size: 1.5em;
+}
+
+.userProfil-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.userProfil-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.userProfil-form-section label {
+    font-size: 1.2em;
+    color: var(--grey);
+}
+
+.userProfil-form-section input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--grey);
+    font-size: 1.2em;
+    padding: 5px 0;
+    outline: none;
+    width: 100%;
+}
+
+.userProfil-form-section input::placeholder {
+    color: #e3d7d7;
+}
+
+.Edit-profil-btn {
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 1.8em;
+    color: var(--secondaryBtn);
+    border-radius: 15px;
+    border: 2px solid var(--secondary);
+    background: var(--brouwn);
+    background-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+    margin-top: 15px;
+}
+
+.modale-elements {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: none;
+    place-items: center;
+}
+
+.modale {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 15px;
+    z-index: 4;
+    background-color: #f8f8f8;border-radius: 10px;
+    padding: 25px 5px;
+    width: 50vw;
+    height: 200px;
+}
+
+.fa-circle-exclamation {
+    color: #ff4646;
+}
+
+#edite-modale-fa {
+    color: #d8c628;
+}
+
+.modale-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modale-title {
+    color: #0a0a0a;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: Karla;
+}
+
+.modale-body {
+    font-family: Karla;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 25px;
+    width: 100%;
+}
+
+.modale-body input {
+    border: 2px #d8c628 solid;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 1.5em;
+    outline: none;
+}
+
+.modale-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.modale-btn {
+    border: none;
+    padding: 10px;
+    font-size: 1.8em;
+    color: var(--secondaryBtn);
+    border-radius: 10px;
+}
+
+.modale-supp-btn {
+    background-color: #ff4646;
+}
+
+.modale-edit-btn {
+    background-color: #d8c628;
+}
+
+.secret-inp {
+    display: none;
+}
+
+.modale-cancel-btn {
+    background-color: #787878;
+}
+
+.modale-filter {
+    display: none;
+    position: absolute;
+    background-color: #0a0a0ab6;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 3;
+    position: fixed;
+}
+
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+    .userProfil-content {
+        width: 40vw;
+    }
+
+    .userProfil-form-section {
+        width: 90%;
+    }
+
+    .userProfil-form-section label {
+        font-size: 1.5em;
+    }
+    
+    .userProfil-form-section input {
+        font-size: 1.5em;
+    }
+}

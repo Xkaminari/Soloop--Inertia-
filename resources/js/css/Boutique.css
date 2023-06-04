@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+:root {
+    --main: #DEDFF3;
+    --secondary: rgba(243, 247, 255, 0.5);
+    --secondaryBtn: #f3f7ff;
+    --grey : #787878;
+    --brouwn : #B77151;
+    --green : #7de055 ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Karla;
+}
+
+.secret-inp {
+    display: none;
+}
+
+.boutique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    background-color: var(--main);
+    min-height: 100vh;
+}
+
+.placeholder {
+    height: 8%;
+    width: 100%;
+}
+
+/* Product css */
+.products-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 25px;
+    min-height: 50vh;
+    z-index: 2;
+}
+
+.product {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 100px;
+    transition: 1s ease-in-out;
+    background-color: var(--secondary);
+    border-radius: 60px 20px 20px 60px;
+}
+
+.onclick-div-product {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.prouduct-img {
+    position: relative;
+    width: 100px;
+    border-radius: 50% 0 0 50%;
+    opacity: 0.85;
+    margin-right: 5px;
+}
+
+.prouduct-name {
+    color: var(--grey);
+    font-family: Karla;
+    font-size: 1.2em;
+    font-weight: 400;
+    width: 100%;
+}
+
+.product-prices {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prouduct-price {
+    color: var(--brouwn);
+    font-family: Karla;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.prouduct-barred-price {
+    text-decoration: line-through;
+    color: #787878;
+}
+
+.prouduct-add {
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    background-color: var(--brouwn);
+    color: var(--secondaryBtn);
+    font-size: 1.5em;
+    width: 15%;
+    transition: 0.6s ease;
+}
+
+.fa-check {
+    display: none;
+}
+/* ---------------------- */
+
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 100px;
+        column-gap: 50px;
+    }
+
+    .product {
+        width: auto;
+    }
+}

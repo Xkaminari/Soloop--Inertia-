@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --main: #DEDFF3;
+    --secondary: rgba(243, 247, 255, 0.5);
+    --bground: #E8EBFC;
+    --grey : #C4C4C4;
+    --brouwn : #B77151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Karla;
+}
+
+/* Footer css */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    height: 20vh;
+    z-index: 2;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 35vw;
+    padding: 0 50px 15px 50px;
+    border-bottom: 2px solid var(--grey);
+}
+
+.social-media a {
+    font-size: 2em;
+    color: var(--grey);
+}
+
+.copyright {
+    color: var(--grey);
+}
+/* ---------------------- */
+
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+    .social-media {
+        width: 250px;
+    }
+
+    .social-media a {
+        font-size: 2.5em;
+    }
+
+    .copyright {
+        font-size: 1.2em;
+    }
+}
